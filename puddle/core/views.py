@@ -1,11 +1,11 @@
 from django.shortcuts import render , redirect
-from item.models import Category ,Item
+from item.models import Area ,Item
 from .forms import SignupForm
 
 
 def index(request) :
     items = Item.objects.filter(is_sold = False)[0:6]
-    categories = Category.objects.all()
+    categories = Area.objects.all()
     return render(request,'core/index.html' ,{
         'categories' : categories,
         'items' : items,

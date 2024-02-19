@@ -18,16 +18,16 @@
     </form>
 
     <hr class="my-6 border-gray-700" />
-    <p class="font-semibold text-gray-400">Categories</p>
+    <p class="font-semibold text-gray-400">Areas</p>
     <ul>
-      {% for category in categories %}
+      {% for area in  areas %}
       <li
-        class="py-2 px-2 rounded-xl hover:bg-gray-500{% if category.id == category_id %} bg-gray-700 {% endif %}"
+        class="py-2 px-2 rounded-xl hover:bg-gray-500{% if area.id == area_id %} bg-gray-700 {% endif %}"
       >
         <a
-          href="{% url 'item:items' %}?query={{query}}&category={{category.id}}"
+          href="{% url 'item:items' %}?query={{query}}&area={{area.id}}"
           class="text-white"
-          >{{category.name}}</a
+          >{{area.name}}</a
         >
       </li>
       {% endfor %}
