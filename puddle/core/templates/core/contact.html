@@ -5,5 +5,64 @@ Contact
 {% endblock %}  
 
 {% block content %}
-<h1>The Contact Page</h1>
+<style>
+    .div1,.div2,.div3,.div4{
+        background-color: #43f1dd;
+        /* border: 2px solid black; */
+        width: 21%;
+        margin: 10px;
+        height: 55vh;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 2px 20px;
+    }
+    .div1 p{
+        /* display: none; */
+    }
+    .div1:hover,.div2:hover,.div3:hover,.div4:hover{
+        background-color: #3cfce5;
+    }
+    .img1,.img2,.img3,.img4{
+        background-color: #ffffff;
+        /* border: 2px solid black; */
+        /* width: 20%; */
+        height: 70%;
+        margin: 18px;
+        border-radius: 1000px;
+        padding: 2px;
+    }
+    .img1:hover,.img2:hover,.img3:hover,.img4:hover{
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+
+        
+    }
+</style>
+<h1>Contact Us</h1>
+<div class="content">
+    <div class="div1">
+        <div class="img1"></div> 
+        <p>
+            Hello1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem.
+        </p>
+        <img src="WhatsApp Image 2023-07-21 at 11.09.13.jpg" alt="">
+    </div>
+    <div class="div2">
+        <div class="img2"></div>
+        
+    Hello2
+</div>
+    <div class="div3">
+        <div class="img3"></div>
+    Hello3
+</div>
+    <div class="div4">
+        <div class="img1"></div>
+    Hello4
+</div>
+</div>
 {% endblock %}
